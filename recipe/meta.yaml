@@ -11,7 +11,7 @@ source:
   sha256: b37f16282b6cb2cc8dde1d2b1835c1413fc9f0ab1bf32405dca1d4916836d549
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -22,15 +22,15 @@ requirements:
     - python
     - gmp >=5.0.1,<7
     - mpfr 3.*
-    - libflint
-    - singular
+    - libflint 2.5.*
+    - singular 4.1.0
 
   run:
     - python
     - gmp >=5.0.1,<7
     - mpfr 3.*
-    - libflint
-    - singular
+    - libflint 2.5.*
+    - singular 4.1.0
 
 test:
   commands:
