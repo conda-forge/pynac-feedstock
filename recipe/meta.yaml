@@ -23,14 +23,14 @@ requirements:
     - gmp >=5.0.1,<7
     - mpfr 3.*
     - libflint 2.5.*
-    - singular 4.1.0
+    - singular 4.1.0.p3
 
   run:
     - python
     - gmp >=5.0.1,<7
     - mpfr 3.*
     - libflint 2.5.*
-    - singular 4.1.0
+    - singular 4.1.0.p3
 
 test:
   commands:
