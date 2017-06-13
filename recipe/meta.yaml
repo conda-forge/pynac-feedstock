@@ -1,4 +1,4 @@
-{% set version = "0.7.5" %}
+{% set version = "0.7.7" %}
 {% set name = "pynac" %}
 
 package:
@@ -8,11 +8,11 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.bz2
   url: https://github.com/pynac/pynac/releases/download/pynac-{{ version }}/pynac-{{ version }}.tar.bz2
-  sha256: b37f16282b6cb2cc8dde1d2b1835c1413fc9f0ab1bf32405dca1d4916836d549
+  sha256: c7bab71c6f554e174cd507670d1435428cbb508b12d3423bf0960400fe8b2431
 
 build:
-  number: 1
-  skip: true  # [win]
+  number: 0
+  skip: true  # [win or py3k]
 
 requirements:
   build:
@@ -23,14 +23,14 @@ requirements:
     - gmp >=5.0.1,<7
     - mpfr 3.*
     - libflint 2.5.*
-    - singular 4.1.0
+    - singular 4.1.0.p3
 
   run:
     - python
     - gmp >=5.0.1,<7
     - mpfr 3.*
     - libflint 2.5.*
-    - singular 4.1.0
+    - singular 4.1.0.p3
 
 test:
   commands:
