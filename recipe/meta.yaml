@@ -1,4 +1,4 @@
-{% set version = "0.7.7" %}
+{% set version = "0.7.8" %}
 {% set name = "pynac" %}
 
 package:
@@ -8,11 +8,11 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.bz2
   url: https://github.com/pynac/pynac/releases/download/pynac-{{ version }}/pynac-{{ version }}.tar.bz2
-  sha256: c7bab71c6f554e174cd507670d1435428cbb508b12d3423bf0960400fe8b2431
+  sha256: 5c1623c8820e0d70f059a7bf4f1330e588ca6e35bff873e6d1449e21354a4398
 
 build:
   number: 0
-  skip: true  # [win or py3k]
+  skip: true  # [win]
 
 requirements:
   build:
