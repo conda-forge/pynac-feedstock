@@ -16,20 +16,20 @@ build:
 
 requirements:
   build:
-    - toolchain
+    - {{ compiler('cxx') }}
     - libtool
+  host:
     - pkg-config
     - python
-    - gmp >=5.0.1,<7
-    - mpfr 4.*
+    - gmp
+    - mpfr
     - libflint 2.5.*
     - singular 4.1.0.p3
-
   run:
     - python
-    - gmp >=5.0.1,<7
-    - mpfr 4.*
-    - libflint 2.5.*
+    - gmp
+    - mpfr
+    - libflint
     - singular 4.1.0.p3
 
 test:
