@@ -14,14 +14,16 @@ Summary: Pynac -- symbolic computation with Python objects
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pynac-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pynac-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pynac-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pynac-feedstock)
-Windows: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/pynac-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/pynac-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/pynac-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/pynac-feedstock)
+![Windows disabled](https://img.shields.io/badge/Windows-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pynac/badges/version.svg)](https://anaconda.org/conda-forge/pynac)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pynac/badges/downloads.svg)](https://anaconda.org/conda-forge/pynac)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pynac-green.svg)](https://anaconda.org/conda-forge/pynac) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pynac.svg)](https://anaconda.org/conda-forge/pynac) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pynac.svg)](https://anaconda.org/conda-forge/pynac) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pynac.svg)](https://anaconda.org/conda-forge/pynac) |
 
 Installing pynac
 ================
