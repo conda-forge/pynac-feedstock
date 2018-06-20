@@ -1,4 +1,4 @@
-{% set version = "0.7.17" %}
+{% set version = "0.7.16" %}
 {% set name = "pynac" %}
 
 package:
@@ -8,10 +8,12 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.bz2
   url: https://github.com/pynac/pynac/releases/download/pynac-{{ version }}/pynac-{{ version }}.tar.bz2
-  sha256: d380312bb6157fe2c0f22bf7af0c5ba1a001ae4ddfaf186e1a240ebfb0ac492e
+  sha256: f68a3ff417cb268bd31df8d1dab7d5a542ab2ade883f1745306800de591f3b83
+  patches:
+    - memleak.patch
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
 
 requirements:
