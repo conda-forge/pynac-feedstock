@@ -11,9 +11,10 @@ source:
   sha256: f68a3ff417cb268bd31df8d1dab7d5a542ab2ade883f1745306800de591f3b83
   patches:
     - memleak.patch
+    - log_segfault.patch
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
