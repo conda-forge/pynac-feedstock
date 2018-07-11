@@ -1,4 +1,4 @@
-{% set version = "0.7.17" %}
+{% set version = "0.7.22" %}
 {% set name = "pynac" %}
 
 package:
@@ -11,7 +11,7 @@ source:
   sha256: d380312bb6157fe2c0f22bf7af0c5ba1a001ae4ddfaf186e1a240ebfb0ac492e
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
 
 requirements:
