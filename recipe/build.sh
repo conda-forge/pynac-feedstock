@@ -3,13 +3,12 @@
 export CPPFLAGS="-I$PREFIX/include -DDISABLE_COMMENTATOR $CPPFLAGS"
 export LDFLAGS="-L$PREFIX/lib $LDFLAGS"
 export LD_LIBRARY_PATH="$PREFIX/lib:$LD_LIBRARY_PATH"
-export PYTHON_LDFLAGS=`python -c "import sysconfig; print(sysconfig.get_config_var('LDSHARED').split(' ',1)[1])"`
 export CFLAGS="-O2 -g -fPIC $CFLAGS"
 export CXXFLAGS="-O2 -g -fPIC $CXXFLAGS"
 
-if [ "$(uname)" == "Darwin" ]
-then
-    # turn off annoying wrnings
+if [ "$(uname)" == "Darwin" ]; then
+    export PYTHON_LDFLAGS="-undefined dynamic_lookup"
+    # turn off annoying warnings
     export CFLAGS="-Wno-deprecated-register $CFLAGS"
     export CXXFLAGS="-Wno-deprecated-register $CXXFLAGS"
 fi
