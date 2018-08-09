@@ -7,7 +7,7 @@ Package license: GPLv2+
 
 Feedstock license: BSD 3-Clause
 
-Summary: Pynac -- symbolic computation with Python objects
+Summary: SageMath support library for symbolic computations
 
 
 
