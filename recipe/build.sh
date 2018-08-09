@@ -6,9 +6,9 @@ export LD_LIBRARY_PATH="$PREFIX/lib:$LD_LIBRARY_PATH"
 export CFLAGS="-O2 -g -fPIC $CFLAGS"
 export CXXFLAGS="-O2 -g -fPIC $CXXFLAGS"
 
-if [ "$(uname)" == "Darwin" ]
-then
-    # turn off annoying wrnings
+if [ "$(uname)" == "Darwin" ]; then
+    export PYTHON_LDFLAGS="-undefined dynamic_lookup"
+    # turn off annoying warnings
     export CFLAGS="-Wno-deprecated-register $CFLAGS"
     export CXXFLAGS="-Wno-deprecated-register $CXXFLAGS"
 fi
