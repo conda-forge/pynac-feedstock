@@ -13,6 +13,9 @@ if [ "$(uname)" == "Darwin" ]; then
     export CXXFLAGS="-Wno-deprecated-register $CXXFLAGS"
 fi
 
+# remove libtool files
+find $PREFIX -name '*.la' -delete
+
 chmod +x configure
 
 ./configure \
