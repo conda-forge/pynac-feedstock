@@ -25,13 +25,13 @@ requirements:
     - gmp
     - mpfr
     - libflint 2.5.*
-    - singular 4.1.0.p3
+    - singular
   run:
     - python
     - gmp
     - mpfr
     - libflint
-    - singular 4.1.0.p3
+    - singular
 
 test:
   commands:
