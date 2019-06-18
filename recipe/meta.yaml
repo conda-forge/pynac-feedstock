@@ -11,7 +11,7 @@ source:
   sha256: db12bc1ec2f3a34d8ca9c677c8da747112e9b6b819512c110a6209026e2efcd6
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
   skip: true  # [py3k and py<36]
 
