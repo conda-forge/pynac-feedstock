@@ -6,6 +6,8 @@ export LD_LIBRARY_PATH="$PREFIX/lib:$LD_LIBRARY_PATH"
 export CFLAGS="-O2 -g -fPIC $CFLAGS"
 export CXXFLAGS="-O2 -g -fPIC $CXXFLAGS"
 
+export CXXFLAGS=$(echo $CXXFLAGS | sed "s/-fvisibility-inlines-hidden//g")
+
 if [ "$(uname)" == "Darwin" ]; then
     export PYTHON_LDFLAGS="-undefined dynamic_lookup"
     # turn off annoying warnings
