@@ -26,12 +26,14 @@ requirements:
     - mpfr
     - libflint 2.5.*
     - singular 4.1.1
+    - ntl
   run:
     - python
     - gmp
     - mpfr
     - libflint
     - singular
+    - ntl
 
 test:
   commands:
