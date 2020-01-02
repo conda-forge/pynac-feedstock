@@ -18,6 +18,7 @@ requirements:
   build:
     - {{ compiler('cxx') }}
     - libtool
+    - make
   host:
     - pkg-config
     - python
