@@ -46,7 +46,7 @@ test:
 
 about:
   home: http://pynac.org/
-  license: GPLv2+
+  license: GPL-2.0-or-later
   license_file: COPYING
   summary: SageMath support library for symbolic computations
   dev_url: https://github.com/pynac/pynac
