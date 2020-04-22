@@ -10,7 +10,7 @@ source:
   sha256: cc124ae9757355e3434ff864aeca6503184faf0642d26bc2f7bca6f3f2c9b50f
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win]
   skip: true  # [py3k and py<36]
 
@@ -46,7 +46,7 @@ test:
 
 about:
   home: http://pynac.org/
-  license: GPLv2+
+  license: GPL-2.0-or-later
   license_file: COPYING
   summary: SageMath support library for symbolic computations
   dev_url: https://github.com/pynac/pynac
