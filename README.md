@@ -3,7 +3,7 @@ About pynac
 
 Home: http://pynac.org/
 
-Package license: GPLv2+
+Package license: GPL-2.0-or-later
 
 Feedstock license: BSD 3-Clause
 
@@ -26,7 +26,7 @@ Current build status
     <td>Drone</td>
     <td>
       <a href="https://cloud.drone.io/conda-forge/pynac-feedstock">
-        <img alt="linux" src="https://img.shields.io/drone/build/conda-forge/master.svg?label=Linux">
+        <img alt="linux" src="https://img.shields.io/drone/build/conda-forge/pynac-feedstock/master.svg?label=Linux">
       </a>
     </td>
   </tr>
