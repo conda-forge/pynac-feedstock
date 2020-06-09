@@ -10,7 +10,7 @@ source:
   sha256: cc124ae9757355e3434ff864aeca6503184faf0642d26bc2f7bca6f3f2c9b50f
 
 build:
-  number: 4
+  number: 5
   skip: true  # [win]
   skip: true  # [py3k and py<36]
 
@@ -24,7 +24,7 @@ requirements:
     - python
     - gmp
     - mpfr
-    - libflint 2.5.*
+    - libflint
     - singular 4.1.1
     - ntl
   run:
