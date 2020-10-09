@@ -16,8 +16,6 @@ docker_image:
 - condaforge/linux-anvil-aarch64
 gmp:
 - '6'
-libflint:
-- '2.6'
 mpfr:
 - '4'
 ntl:
@@ -34,3 +32,5 @@ python:
 - 3.6.* *_cpython
 singular:
 - 4.1.2
+target_platform:
+- linux-aarch64

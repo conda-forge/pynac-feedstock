@@ -10,8 +10,6 @@ docker_image:
 - condaforge/linux-anvil-ppc64le
 gmp:
 - '6'
-libflint:
-- '2.6'
 mpfr:
 - '4'
 ntl:
@@ -28,3 +26,5 @@ python:
 - 3.8.* *_cpython
 singular:
 - 4.1.2
+target_platform:
+- linux-ppc64le
