@@ -23,7 +23,7 @@ chmod +x configure
 ./configure \
     --prefix="$PREFIX" \
     --with-giac=no \
-    --libdir="$PREFIX/lib"
+    --libdir="$PREFIX/lib" || ( cat config.log; false)
 
 make -j${CPU_COUNT}
 make install
