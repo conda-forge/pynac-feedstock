@@ -8,6 +8,8 @@ package:
 source:
   url: https://github.com/pynac/pynac/releases/download/pynac-{{ version }}/pynac-{{ version }}.tar.bz2
   sha256: cc124ae9757355e3434ff864aeca6503184faf0642d26bc2f7bca6f3f2c9b50f
+  patches:
+    - pypy-has-no-sysconfig.get_config_var-yet.patch  # [python_impl == 'pypy']
 
 build:
   number: 7
