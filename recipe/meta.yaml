@@ -40,7 +40,6 @@ requirements:
 test:
   commands:
     - test -f ${PREFIX}/include/pynac/ginac.h
-    - test -f ${PREFIX}/lib/lib{{ name }}.a
     - test -f ${PREFIX}/lib/lib{{ name }}.dylib     # [osx]
     - test -f ${PREFIX}/lib/lib{{ name }}.so        # [linux]
 
