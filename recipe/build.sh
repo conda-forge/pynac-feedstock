@@ -1,18 +1,16 @@
 #!/bin/bash
 
 export CPPFLAGS="-I$PREFIX/include -DDISABLE_COMMENTATOR $CPPFLAGS"
-export LDFLAGS="-L$PREFIX/lib $LDFLAGS"
-export LD_LIBRARY_PATH="$PREFIX/lib:$LD_LIBRARY_PATH"
 export CFLAGS="-O2 -g -fPIC $CFLAGS"
 export CXXFLAGS="-O2 -g -fPIC $CXXFLAGS"
 
 export CXXFLAGS=$(echo $CXXFLAGS | sed "s/-fvisibility-inlines-hidden//g")
 
-if [ "$(uname)" == "Darwin" ]; then
+if [[ "$target_platform" == osx-* ]]; then
     export PYTHON_LDFLAGS="-undefined dynamic_lookup"
     # turn off annoying warnings
-    export CFLAGS="-Wno-deprecated-register $CFLAGS"
-    export CXXFLAGS="-Wno-deprecated-register $CXXFLAGS"
+    export CFLAGS="-Wno-deprecated-register $CFLAGS -isysroot ${SDKROOT}"
+    export CXXFLAGS="-Wno-deprecated-register $CXXFLAGS -isysroot ${SDKROOT}"
 fi
 
 # remove libtool files
