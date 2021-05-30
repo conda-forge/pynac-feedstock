@@ -10,22 +10,25 @@ source:
   sha256: 0ca3f7fcfdf46a2f63e414bd516b501d747c79201279e26aa99e03df5efedd4d
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
   skip: true  # [py3k and py<36]
 
 requirements:
   build:
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
+    - gnuconfig  # [unix]
     - {{ compiler('cxx') }}
     - libtool
     - make
-  host:
     - pkg-config
+  host:
     - python
     - gmp
     - mpfr
     - libflint
-    - singular 4.1.1
+    - singular
     - ntl
   run:
     - python
