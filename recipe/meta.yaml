@@ -22,8 +22,8 @@ requirements:
     - {{ compiler('cxx') }}
     - libtool
     - make
-  host:
     - pkg-config
+  host:
     - python
     - gmp
     - mpfr
