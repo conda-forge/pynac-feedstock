@@ -2,7 +2,7 @@
 # Get an updated config.sub and config.guess
 cp $BUILD_PREFIX/share/gnuconfig/config.* .
 
-export CPPFLAGS="-I$PREFIX/include -DDISABLE_COMMENTATOR $CPPFLAGS"
+export CPPFLAGS="-DDISABLE_COMMENTATOR $CPPFLAGS"
 export CFLAGS="-O2 -g -fPIC $CFLAGS"
 export CXXFLAGS="-O2 -g -fPIC $CXXFLAGS"
 
@@ -15,9 +15,6 @@ if [[ "$target_platform" == osx-* ]]; then
     export CXXFLAGS="-Wno-deprecated-register $CXXFLAGS -isysroot ${SDKROOT}"
 fi
 
-# remove libtool files
-find $PREFIX -name '*.la' -delete
-
 chmod +x configure
 
 ./configure \
@@ -25,5 +22,5 @@ chmod +x configure
     --with-giac=no \
     --libdir="$PREFIX/lib"
 
-make -j${CPU_COUNT}
+make -j${CPU_COUNT} V=1
 make install
