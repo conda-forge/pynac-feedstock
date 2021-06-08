@@ -8,9 +8,16 @@ package:
 source:
   url: https://github.com/pynac/pynac/releases/download/pynac-{{ version }}/pynac-{{ version }}.tar.bz2
   sha256: 0ca3f7fcfdf46a2f63e414bd516b501d747c79201279e26aa99e03df5efedd4d
+  patches:
+    # patches taken from sage
+    - patches/disable_poly_mul_expand.patch
+    - patches/handle_factor.patch
+    - patches/power_inf_loop.patch
+    - patches/seriesbug.patch
+    - patches/too_much_sub.patch
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win]
   skip: true  # [py3k and py<36]
 
