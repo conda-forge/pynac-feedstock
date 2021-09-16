@@ -1,4 +1,4 @@
-{% set version = "0.7.27" %}
+{% set version = "0.7.29" %}
 {% set name = "pynac" %}
 
 package:
@@ -7,17 +7,13 @@ package:
 
 source:
   url: https://github.com/pynac/pynac/releases/download/pynac-{{ version }}/pynac-{{ version }}.tar.bz2
-  sha256: 0ca3f7fcfdf46a2f63e414bd516b501d747c79201279e26aa99e03df5efedd4d
+  sha256: 3b480238b1a12dc09d2e5e5b23c150e6e435789fa5fc04d281ed0b131dadf11b
   patches:
     # patches taken from sage
-    - patches/disable_poly_mul_expand.patch
-    - patches/handle_factor.patch
-    - patches/power_inf_loop.patch
-    - patches/seriesbug.patch
-    - patches/too_much_sub.patch
+    - patches/realpartloop.patch
 
 build:
-  number: 3
+  number: 0
   skip: true  # [win]
   skip: true  # [py3k and py<36]
 
