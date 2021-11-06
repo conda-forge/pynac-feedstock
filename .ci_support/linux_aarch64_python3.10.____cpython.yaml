@@ -1,7 +1,11 @@
+BUILD:
+- aarch64-conda_cos7-linux-gnu
+cdt_arch:
+- aarch64
 cdt_name:
-- cos6
+- cos7
 channel_sources:
-- conda-forge,defaults
+- conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
@@ -27,11 +31,8 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.6.* *_cpython
+- 3.10.* *_cpython
 singular:
 - 4.2.0.p3
 target_platform:
-- linux-64
-zip_keys:
-- - cdt_name
-  - docker_image
+- linux-aarch64
