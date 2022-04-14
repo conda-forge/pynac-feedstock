@@ -1,0 +1,34 @@
+cdt_name:
+- cos6
+channel_sources:
+- conda-forge
+channel_targets:
+- conda-forge main
+cxx_compiler:
+- gxx
+cxx_compiler_version:
+- '10'
+docker_image:
+- quay.io/condaforge/linux-anvil-cos7-x86_64
+gmp:
+- '6'
+libflint:
+- '2.8'
+mpfr:
+- '4'
+ntl:
+- 11.4.3
+pin_run_as_build:
+  gmp:
+    max_pin: x
+  mpfr:
+    max_pin: x
+  python:
+    min_pin: x.x
+    max_pin: x.x
+python:
+- 3.9.* *_73_pypy
+singular:
+- 4.2.1.p3
+target_platform:
+- linux-64
