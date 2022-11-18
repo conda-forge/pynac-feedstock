@@ -1,5 +1,5 @@
 cdt_name:
-- cos6
+- cos7
 channel_sources:
 - conda-forge
 channel_targets:
@@ -19,16 +19,12 @@ mpfr:
 ntl:
 - 11.4.3
 pin_run_as_build:
-  gmp:
-    max_pin: x
-  mpfr:
-    max_pin: x
   python:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.7.* *_cpython
+- 3.9.* *_73_pypy
 singular:
 - 4.2.1.p3
 target_platform:
-- linux-64
+- linux-ppc64le
